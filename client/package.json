@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yfdd617235.github.io/museoPE/",
+  "homepage": "https://yfdd617235.github.io/museoPE",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
