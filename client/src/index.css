@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* background-color: black;
+  color: white; */
+}
+
+/* Ocultar scrollbar en navegadores como Chrome, Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ocultar scrollbar en Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Ocultar scrollbar en IE, Edge */
+*::-ms-scrollbar {
+  display: none;
+}
+
+
+@media print {
+  body {
+    background-color: white !important;
+  /* color: black !important; */
+  }
+
+}
+
+@keyframes grow {
+  from {
+    height: 0;
+  }
+  to {
+    height: 10rem; /* Ajusta la altura según lo necesario */
+  }
+}
+
+.animate-grow {
+  animation: grow 20s ease forwards;
+}
+
