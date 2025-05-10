@@ -3,7 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // base: '/', //Dominio personalizado
-  base: 'https://yfdd617235.github.io/museoPE/'
-  // base: '' //Dominio en netlify
+  base: '/museoPE/' // Esto es importante para que las rutas se resuelvan correctamente en GitHub Pages
 });
