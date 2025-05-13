@@ -152,7 +152,7 @@ const HomaPage = () => {
               </div>
 
               {/* Barra divisoria */}
-              <div className="hidden md:block h-40 w-[2px] bg-blue-900"></div>
+              <div className="hidden md:block h-40 w-[2px] bg-[#ebcd83]"></div>
 
               <div className="md:w-2/3 pb-10 md:py-10">
                 <h2 className="font-bold md:text-xl">{t('whoarewe.approach')}</h2>
@@ -162,65 +162,6 @@ const HomaPage = () => {
               </div>
 
             </div>
-          </div>
-        </div>
-
-
-        {/* Cards Section */}
-        <div id="gallery" className="snap-section section mx-auto px-4 lg:px-20 2xl:px-60">
-          <h2 className="text-lg md:text-2xl font-bold text-center py-16">{t('services.services')}</h2>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-            {/* Card Template */}
-            {[
-              {
-                title: t('services.card1title'),
-                description: t('services.card1text'),
-                image: "ofi1.jpg",
-              },
-              {
-                title: t('services.card2title'),
-                description: t('services.card2text'),
-                image: "ofi2.jpg",
-              },
-              {
-                title: t('services.card3title'),
-                description: t('services.card3text'),
-                image: "ofi3.jpg",
-              },
-              {
-                title: t('services.card4title'),
-                description: t('services.card4text'),
-                image: "ofi4.jpg",
-              },
-              {
-                title: t('services.card5title'),
-                description: t('services.card5text'),
-                image: "ofi5.jpg",
-              },
-              {
-                title: t('services.card6title'),
-                description: t('services.card6text'),
-                image: "ofi6.jpg",
-              },
-            ].map((card, index) => (
-              <div key={index} className="cursor-pointer h-full shadow-md rounded-lg relative group overflow-hidden hover:z-50">
-                {/* Image */}
-                <img
-                  src={`${import.meta.env.BASE_URL}${card.image}`}
-                  alt={card.title}
-                  className="w-full h-48 object-cover rounded-t-lg transition-opacity duration-1000 group-hover:opacity-0"
-                />
-                {/* Title (visible initially) */}
-                <div className="p-4 md:p-6 text-center">
-                  <h5 className="text-base md:text-lg font-semibold text-blue-900">{card.title}</h5>
-                </div>
-                {/* Description (hidden until hover) */}
-                <div className="p-4 md:p-6 absolute inset-0 bg-white flex flex-col justify-center text-left opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h5 className="text-base md:text-lg font-semibold text-blue-900">{card.title}</h5>
-                  <p className="text-sm md:text-base text-gray-700 mt-2">{card.description}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 
@@ -237,7 +178,7 @@ const HomaPage = () => {
           <div className="px-4 md:px-32 lg:px-48">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="flex items-center justify-center">
-                <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}logoIC.webp`} alt="Logo" />
+                <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}logoPE.png`} alt="Logo" />
               </div>
 
               <div className="flex items-center justify-left p-6">
@@ -246,17 +187,17 @@ const HomaPage = () => {
 
                   {/* Correo electrónico */}
                   <a
-                    href="mailto:gerencia@inversionesconti.com"
+                    href="mailto:gerencia@museo depablo.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-xs md:text-sm"
                   >
                     <EnvelopeIcon className="w-4 h-4 text-white" />
-                    <span >gerencia@inversionesconti.com</span>
+                    <span >gerencia@museodepablo.com</span>
                   </a>
 
-                  {/* <div className="flex gap-4">
-                    
+                  <div className="flex gap-4">
+
                     <a
                       href="https://es.linkedin.com/company/conti"
                       target="_blank"
@@ -274,7 +215,7 @@ const HomaPage = () => {
                       </svg>
                     </a>
 
-                    
+
                     <a
                       href="https://wa.me/+573104221653"
                       target="_blank"
@@ -293,7 +234,7 @@ const HomaPage = () => {
                       </svg>
                     </a>
 
-                    
+
                     <a
                       href="https://www.instagram.com/tu_nombre_usuario"
                       target="_blank"
@@ -311,7 +252,7 @@ const HomaPage = () => {
                       </svg>
                     </a>
 
-                   
+
                     <a
                       href="https://www.facebook.com/tu_nombre_usuario"
                       target="_blank"
@@ -344,7 +285,7 @@ const HomaPage = () => {
                         <path d="M22.46 6c-.77.34-1.6.57-2.48.67a4.34 4.34 0 0 0 1.91-2.39c-.84.5-1.77.87-2.76 1.07A4.303 4.303 0 0 0 16.54 5a4.3 4.3 0 0 0-4.3 4.3c0 .34.04.67.11 1a12.23 12.23 0 0 1-8.86-4.48c-.36.62-.56 1.34-.56 2.1 0 1.44.73 2.72 1.83 3.47-.67-.02-1.29-.2-1.83-.5v.05c0 2.01 1.43 3.68 3.34 4.05-.35.1-.73.15-1.12.15-.27 0-.53-.02-.78-.07.53 1.67 2.07 2.88 3.91 2.91-1.43 1.12-3.23 1.79-5.19 1.79-.34 0-.67-.02-1-.07 1.83 1.17 4 1.86 6.32 1.86 7.62 0 11.77-6.3 11.77-11.75 0-.18 0-.35-.01-.53a8.31 8.31 0 0 0 2.04-2.12z" />
                       </svg>
                     </a>
-                  </div> */}
+                  </div>
 
 
                 </div>
@@ -372,7 +313,7 @@ const HomaPage = () => {
                       >
                         <path d="M16.114-0.011c-6.559 0-12.114 5.587-12.114 12.204 0 6.93 6.439 14.017 10.77 18.998 0.017 0.020 0.717 0.797 1.579 0.797h0.076c0.863 0 1.558-0.777 1.575-0.797 4.064-4.672 10-12.377 10-18.998 0-6.618-4.333-12.204-11.886-12.204zM16.515 29.849c-0.035 0.035-0.086 0.074-0.131 0.107-0.046-0.032-0.096-0.072-0.133-0.107l-0.523-0.602c-4.106-4.71-9.729-11.161-9.729-17.055 0-5.532 4.632-10.205 10.114-10.205 6.829 0 9.886 5.125 9.886 10.205 0 4.474-3.192 10.416-9.485 17.657zM16.035 6.044c-3.313 0-6 2.686-6 6s2.687 6 6 6 6-2.687 6-6-2.686-6-6-6zM16.035 16.044c-2.206 0-4.046-1.838-4.046-4.044s1.794-4 4-4c2.207 0 4 1.794 4 4 0.001 2.206-1.747 4.044-3.954 4.044z" />
                       </svg>
-                      <span>Cra 43A #3 Sur -130, Torre 2, Oficina 915, CE Milla de Oro, Medellín, Antioquia</span>
+                      <span>Medellín, Antioquia</span>
                     </a>
                   </div>
 
@@ -395,7 +336,7 @@ const HomaPage = () => {
           </div>
         </div>
         <footer className="bg-black text-white text-xs bottom-0 w-full text-center py-1">
-          <p>&copy; 2024 Inversiones Conti. All rights reserved.</p>
+          <p>&copy; 2025 Museo de Pablo. All rights reserved.</p>
         </footer>
       </div>
 
