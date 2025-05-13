@@ -41,7 +41,7 @@ const HomaPage = () => {
         <div id="home" className="snap-section relative h-screen w-full flex justify-center items-center overflow-hidden">
           <video
             className="absolute top-0 left-0 w-full h-full object-cover -z-20"
-            src={`${import.meta.env.BASE_URL}building.mp4`}
+            src={`${import.meta.env.BASE_URL}museo.mp4`}
             poster={`${import.meta.env.BASE_URL}building.png`}
             muted
             autoPlay
@@ -72,7 +72,7 @@ const HomaPage = () => {
         /> */}
 
           {/* Fondo negro con opacidad */}
-          <div className="absolute top-0 left-0 w-full h-full bg-blue-900 opacity-30 -z-10" />
+          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10" />
 
           {/* Logo */}
           <div className="absolute flex flex-col px-6 items-center text-white">
@@ -80,7 +80,7 @@ const HomaPage = () => {
               className="text-4xl md:text-6xl font-bold mb-4"
               style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 1)" }}
             >
-              Inversiones Conti
+              MUSEO DE PABLO
             </h1>
             <p
               className="text-lg md:text-2xl font-light text-justify"
@@ -92,8 +92,8 @@ const HomaPage = () => {
         </div>
 
         {/*About us*/}
-        <div id="about" className="snap-section section md:pt-36 text-sm md:text-base">
-          <div className="bg-slate-900 text-white">
+        <div id="history" className="snap-section section md:pt-36 text-sm md:text-base">
+          <div className="bg-[#6c6f5a] text-[#F2F0E4]">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60">
 
               <div className="md:w-1/2 pt-10 md:py-10">
@@ -107,7 +107,7 @@ const HomaPage = () => {
                 </p>
               </div>
 
-              <div className="flex-shrink-0 md:w-1/2 flex justify-center items-center">
+              {/* <div className="flex-shrink-0 md:w-1/2 flex justify-center items-center">
                 <video
                   className="w-full h-full object-cover"
                   src={`${import.meta.env.BASE_URL}presentation.mp4`}
@@ -122,18 +122,32 @@ const HomaPage = () => {
                   }}
                 >Your browser does not support the video tag.
                 </video>
+              </div> */}
+              <div className="flex-shrink-0 md:w-1/2 flex justify-center items-center">
+                <div className="w-full aspect-video">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/htdQEoCRgno?autoplay=1&mute=1&controls=1&playsinline=1"
+                    title="#ReportajesTA - Pablo Escobar, 30 años después de su muerte ‘Sin límite moral’"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </div>
+
             </div>
           </div>
 
           {/*Mision & Vision*/}
-          <div className="bg-gradient-to-b from-white to-slate-200">
+          <div className="bg-gradient-to-b from-white to-[#F2F0E4]">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60">
 
               <div className="md:w-2/3 pt-10 md:py-10">
-                <h2 className="font-bold md:text-xl">{t('whoarewe.mission')}</h2>
+                <h2 className="font-bold md:text-xl">{t('whoarewe.purpose')}</h2>
                 <p className="mt-2 text-gray-700 leading-relaxed text-justify">
-                  {t('whoarewe.missiontext')}
+                  {t('whoarewe.purposetext')}
                 </p>
               </div>
 
@@ -141,9 +155,9 @@ const HomaPage = () => {
               <div className="hidden md:block h-40 w-[2px] bg-blue-900"></div>
 
               <div className="md:w-2/3 pb-10 md:py-10">
-                <h2 className="font-bold md:text-xl">{t('whoarewe.vision')}</h2>
+                <h2 className="font-bold md:text-xl">{t('whoarewe.approach')}</h2>
                 <p className="mt-2 text-gray-700 leading-relaxed text-justify">
-                  {t('whoarewe.visiontext')}
+                  {t('whoarewe.approachtext')}
                 </p>
               </div>
 
@@ -153,7 +167,7 @@ const HomaPage = () => {
 
 
         {/* Cards Section */}
-        <div id="services" className="snap-section section mx-auto px-4 lg:px-20 2xl:px-60">
+        <div id="gallery" className="snap-section section mx-auto px-4 lg:px-20 2xl:px-60">
           <h2 className="text-lg md:text-2xl font-bold text-center py-16">{t('services.services')}</h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {/* Card Template */}
@@ -212,7 +226,8 @@ const HomaPage = () => {
 
 
         {/*Nuestros Clientes */}
-        <div id="clients" className="snap-section section">
+        <div id="legacy
+        " className="snap-section section">
           <CarruselClientes />
         </div>
 

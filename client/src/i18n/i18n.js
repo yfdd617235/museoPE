@@ -7,22 +7,23 @@ const resources = {
     en: {
         translation: {
             navbar: {
-                about: "Who We Are",
-                clients: "Our Customers",
-                services: "Services",
+                history: "History",
+                gallery: "Gallery",
+                legacy: "The Legacy",
                 contact: "Contact",
             },
             jumbotron: {
-                message: "Driving growth and innovation through strategic investments and expert advice.",
+                message: "What remains untold... is still history.",
             },
             whoarewe: {
-                whoarewe: "Who are we?",
-                whoarewetext1: "At Inversiones Conti, we are a leading firm dedicated to meeting the main needs of our clients through professional services that optimize their administrative, legal and tax processes. Our goal is to improve operational efficiency and maximize results, allowing our clients to focus on the most strategic aspects of their business.",
-                whoarewetext2: "Each service we offer is carried out by specialists with extensive experience in their area, guaranteeing impeccable performance and precise execution to ensure success in each project.",
-                mission: "Mission",
-                missiontext: "We are an organization committed to our clients, providing trust and offering them commitment, efficiency and quality in our services, in order to make their administrative and financial processes more profitable by offering comprehensive solutions according to the needs of their business.",
-                vision: "Vision",
-                visiontext: "Create long-lasting strategies with our suppliers and clients to be a fundamental part of the organization, providing them with practical, effective solutions and personalized service so that they can focus their talent and resources on growing their business.",
+                whoarewe: "History",
+                whoarewetext1: "Pablo Escobar Gaviria (1949–1993) was a Colombian drug trafficker who led the Medellín Cartel, one of the most powerful and violent criminal organizations of the 20th century. His wealth and influence soared during the 1980s, fueled by cocaine exports to the United States and beyond. Seen by some as a “Robin Hood” for his social work in poor neighborhoods, and condemned by others for his role in a wave of violence that deeply affected Colombia, Escobar remains a controversial figure whose story still invites debate and reflection.",
+                whoarewetext2: "The city of Medellín was both the center of his empire and the stage for its most tragic consequences. From neighborhoods built with his funding to years marked by bombings and clashes with the state, Escobar’s story is deeply woven into the city’s recent past. Today, Medellín seeks to transform that legacy into memory, dialogue, and learning.",
+                purpose: "Our Purpose",
+                purposetext: "This museum aims to explore the life, influence, and contradictions of Pablo Escobar through a critical and reflective lens. We seek to present not only the history, but also the impact that his legacy has had on Colombian society, particularly in Medellín. Our goal is to create a space for memory, understanding, and dialogue.",
+                approach: "Our Perspective",
+                approachtext: "Rather than glorify or condemn, we invite visitors to experience history from multiple angles — through testimonies, photographs, artifacts, and family voices. This space offers a humanized view that challenges assumptions and invites deeper reflection on a complex and painful past.",
+
             },
             // services: {
             //     services: "Services",
@@ -80,38 +81,24 @@ const resources = {
     es: {
         translation: {
             navbar: {
-                about: "Quiénes Somos",
-                clients: "Nuestros Clientes",
-                services: "Servicios",
+                history: "Historia",
+                gallery: "Galería",
+                legacy: "El Legado",
                 contact: "Contacto",
             },
             jumbotron: {
-                message: "Impulsando el crecimiento y la innovación a través de inversiones estratégicas y asesoría experta.",
+                message: "Lo que no se cuenta… también es historia.",
             },
             whoarewe: {
-                whoarewe: "¿Quiénes somos?",
-                whoarewetext1: "En Inversiones Conti, somos una firma líder dedicada a satisfacer las principales necesidades de nuestros clientes a través de servicios profesionales que optimizan sus procesos administrativos, legales y fiscales. Nuestro objetivo es mejorar la eficiencia operativa y maximizar los resultados, permitiendo que nuestros clientes se enfoquen en los aspectos más estratégicos de su negocio.",
-                whoarewetext2: "Cada servicio que ofrecemos está a cargo de especialistas con amplia experiencia en su área, garantizando un desempeño impecable y una ejecución precisa para asegurar el éxito en cada proyecto.",
-                mission: "Misión",
-                missiontext: "Somos una organización comprometida con nuestros clientes, aportando confianza y brindándoles compromiso, eficiencia y calidad en nuestros servicios, con el fin de hacer sus procesos administrativos y financieros más rentables ofreciendo soluciones integrales de acuerdo a las necesidades de su negocio.",
-                vision: "Visión",
-                visiontext: "Crear estrategias duraderas con nuestros proveedores y clientes para ser parte fundamental de la organización, brindándoles soluciones prácticas, efectivas y un servicio personalizado para que así ellos puedan enfocar su talento y recursos en crecer su negocio.",
+                whoarewe: "Historia",
+                whoarewetext1: "Pablo Escobar Gaviria (1949–1993) fue un narcotraficante colombiano que se convirtió en el líder del Cartel de Medellín, una de las organizaciones criminales más poderosas y violentas del siglo XX. Su fortuna y poder crecieron rápidamente durante los años 80, alimentados por el tráfico de cocaína hacia Estados Unidos y otros países. Aclamado por algunos como un “Robin Hood” por sus obras sociales en barrios populares, y condenado por otros por su papel en una ola de violencia que marcó profundamente a Colombia, Escobar sigue siendo una figura polémica cuya historia continúa generando debate y reflexión.",
+                whoarewetext2: "La ciudad de Medellín fue tanto el centro de su imperio como el escenario de sus consecuencias más trágicas. Desde barrios construidos con su financiación hasta años marcados por atentados y enfrentamientos con el Estado, la historia de Escobar está profundamente entrelazada con el pasado reciente de la ciudad. Hoy, Medellín busca transformar ese legado en memoria, diálogo y aprendizaje.",
+                purpose: "Nuestro Propósito",
+                purposetext: "Este museo busca explorar la vida, la influencia y las contradicciones de Pablo Escobar desde una mirada crítica y reflexiva. Queremos presentar no solo los hechos históricos, sino también el impacto que su legado ha tenido en la sociedad colombiana, especialmente en Medellín. Nuestro objetivo es crear un espacio para la memoria, la comprensión y el diálogo.",
+                approach: "Nuestra Perspectiva",
+                approachtext: "Más que glorificar o condenar, invitamos a los visitantes a experimentar la historia desde múltiples ángulos —a través de testimonios, fotografías, objetos y voces familiares—. Este espacio ofrece una mirada humanizada que desafía los prejuicios y promueve una reflexión más profunda sobre un pasado complejo y doloroso.",
+
             },
-            // services: {
-            //     services: "Servicios",
-            //     card1title: "Consultoría en Planeación y Ejecución de Proyectos",
-            //     card1text: "Ayudamos a planificar y ejecutar proyectos desde el análisis inicial hasta su cierre, asegurando el éxito en cada etapa mediante estrategias personalizadas y soluciones prácticas.",
-            //     card2title: "Consultoría Jurídica",
-            //     card2text: "Ofrecemos asesoramiento jurídico especializado para empresas y particulares, apoyando en la toma de decisiones informadas, la gestión de riesgos y el cumplimiento de normativas vigentes.",
-            //     card3title: "Consultoría Comercial",
-            //     card3text: "Desarrollamos estrategias comerciales que permiten a nuestros clientes identificar y aprovechar oportunidades de mercado, mejorar sus ventas y consolidar su posición en el sector.",
-            //     card4title: "Consultoría Financiera",
-            //     card4text: "Brindamos asesoramiento financiero integral para optimizar recursos, aumentar la rentabilidad y ayudar a nuestros clientes a tomar decisiones económicas informadas y sostenibles.",
-            //     card5title: "Consultoría en Activos Digitales",
-            //     card5text: "Asesoramos en la gestión y expansión de activos digitales, facilitando una presencia efectiva y segura en el entorno digital, aprovechando al máximo las nuevas tecnologías y tendencias.",
-            //     card6title: "Consultoría Informática",
-            //     card6text: "Ofrecemos soluciones tecnológicas avanzadas para optimizar los procesos internos, mejorar la eficiencia operativa y apoyar la transformación digital de las empresas.",
-            // },
             services: {
                 services: "Servicios",
                 card1title: "Facilitación de Estrategias de Inversión",
