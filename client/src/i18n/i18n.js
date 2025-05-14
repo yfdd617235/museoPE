@@ -47,14 +47,14 @@ const resources = {
                 tooltip9: "A look back at history and its lasting effect on society."
             },
             legacy: {
-                title: "El Legado",
+                title: "The legacy",
                 text: "A legacy is not always something inherited with pride; sometimes, it is also the weight of a history that hurts, that divides, and that demands reflection. In Colombia, the name Pablo Escobar does not only evoke the most feared drug lord of his time, but also a dark chapter that scarred entire generations with blood, fear, and silence.\n\nThe Pablo Museum was born as a response to the need to narrate that legacy with truth, critical thought, and memory. Not to perpetuate the man’s image, but to understand the magnitude of his actions and how they shaped the social, political, and cultural fabric of a country still trying to heal its wounds.\n\nThis space does not seek to glorify, justify, or condemn in a one-sided way. It seeks to remember. It seeks to invite deep reflection on the roots of drug trafficking, the fragility of our institutions, and the resilience of those who fought for life amid chaos. It is an opportunity for new generations to understand that the true legacy is not in mansions, luxury, or power, but in the human consequences left by a poorly told story.\n\nThe Legacy is, then, an invitation to look back with honesty, to confront what is uncomfortable, and to turn memory into a tool for collective awareness. Because only by understanding our past can we build a different future."
             },
               founder: {
                 text: "\"I have personally experienced the aftermath of an era marked by violence and impunity. My goal in creating this space is to foster intergenerational dialogue that helps us understand the past in order to build a more conscious, informed, and resilient future.\" – Claudia Patricia Escárraga"
               },
-              reservations: {
-                button: "Reservations"
+              reservation: {
+                text: "Reservations"
               },
             contact: {
                 contact: "Contact",
@@ -114,8 +114,8 @@ const resources = {
               founder: {
                 text: "\"He vivido de cerca las secuelas de una época marcada por la violencia y la impunidad. Mi objetivo al crear este espacio es abrir un diálogo intergeneracional que nos permita comprender el pasado para construir un futuro más consciente, informado y resiliente.\" – Claudia Patricia Escárraga"
               },
-              reservations: {
-                button: "Reservas"
+              reservation: {
+                text: "Reservas"
               },
             contact: {
                 contact: "Contacto",

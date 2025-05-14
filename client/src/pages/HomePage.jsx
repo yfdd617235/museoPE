@@ -42,7 +42,7 @@ const HomaPage = () => {
           <video
             className="absolute top-0 left-0 w-full h-full object-cover -z-20"
             src={`${import.meta.env.BASE_URL}museo.mp4`}
-            poster={`${import.meta.env.BASE_URL}building.png`}
+            poster={`${import.meta.env.BASE_URL}museope.png`}
             muted
             autoPlay
             loop
@@ -205,16 +205,15 @@ const HomaPage = () => {
 
 
         {/* Prefooter Section */}
-        <div id="contact" className="snap-section section bg-black text-white w-full text-left mt-16 p-4 md:p-8 bg-repeat bg-center min-h-[200px]">
+        <div id="contact" className="snap-section section bg-black text-white w-full text-left mt-16 p-4 md:p-8 bg-repeat bg-center min-h-[200px] flex justify-center">
           <div className="px-4 md:px-32 lg:px-48">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="h-10 lg:h-14 flex items-center justify-center gap-2 text-white">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-start justify-center">
+              <div className="h-40 lg:h-40 flex p-6">
               <img
                 src={`${import.meta.env.BASE_URL}logoPE.png`}
                 alt="MUSEO DE PABLO"
                 className="h-full w-auto object-contain"
               />
-              <p>MUSEO DE PABLO</p>
             </div>
 
               <div className="flex items-center justify-left p-6">
@@ -333,9 +332,6 @@ const HomaPage = () => {
                 </div>
               </div>
 
-
-
-
               <div className="flex items-center justify-left p-6">
                 <div className="flex flex-col space-y-3 text-left">
                   <h5 className="text-xs md:text-sm lg:text-lg font-bold">{t('contact.location')}</h5>
@@ -350,7 +346,7 @@ const HomaPage = () => {
                         role="img"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 32 32"
-                        fill="currentColor"
+                        fill="#fffb1f"
                         className="w-4 h-4 mr-2"
                       >
                         <path d="M16.114-0.011c-6.559 0-12.114 5.587-12.114 12.204 0 6.93 6.439 14.017 10.77 18.998 0.017 0.020 0.717 0.797 1.579 0.797h0.076c0.863 0 1.558-0.777 1.575-0.797 4.064-4.672 10-12.377 10-18.998 0-6.618-4.333-12.204-11.886-12.204zM16.515 29.849c-0.035 0.035-0.086 0.074-0.131 0.107-0.046-0.032-0.096-0.072-0.133-0.107l-0.523-0.602c-4.106-4.71-9.729-11.161-9.729-17.055 0-5.532 4.632-10.205 10.114-10.205 6.829 0 9.886 5.125 9.886 10.205 0 4.474-3.192 10.416-9.485 17.657zM16.035 6.044c-3.313 0-6 2.686-6 6s2.687 6 6 6 6-2.687 6-6-2.686-6-6-6zM16.035 16.044c-2.206 0-4.046-1.838-4.046-4.044s1.794-4 4-4c2.207 0 4 1.794 4 4 0.001 2.206-1.747 4.044-3.954 4.044z" />
