@@ -42,17 +42,17 @@ function Gallery() {
       {
         img: `${import.meta.env.BASE_URL}g7.jpg`,
         text: t("gallery.cardtext7"),
-        tooltip: t("gallery.tooltip6"),
+        tooltip: t("gallery.tooltip7"),
       },
       {
         img: `${import.meta.env.BASE_URL}g8.jpg`,
         text: t("gallery.cardtext8"),
-        tooltip: t("gallery.tooltip6"),
+        tooltip: t("gallery.tooltip8"),
       },
       {
         img: `${import.meta.env.BASE_URL}g9.jpg`,
         text: t("gallery.cardtext9"),
-        tooltip: t("gallery.tooltip6"),
+        tooltip: t("gallery.tooltip9"),
       },
     ];
 
@@ -67,7 +67,6 @@ function Gallery() {
     containerRef.current?.scrollBy({ left: 300, behavior: "smooth" });
   };
 
-  // Función para hacer el carrusel infinito
   const handleScroll = (direction) => {
     const container = containerRef.current;
     const maxScroll = container.scrollWidth - container.clientWidth;
@@ -97,7 +96,7 @@ function Gallery() {
         {/* Botón Izquierda */}
         <button
           onClick={() => handleScroll("left")}
-          className="absolute left-0 z-10 bg-slate-800 p-2 rounded-full hover:bg-slate-700"
+          className="absolute left-0 z-10 bg-yellow-600 bg-opacity-50 p-2 rounded-full hover:bg-yellow-600"
         >
           <ChevronLeftIcon className="h-6 w-6 text-white" />
         </button>
@@ -105,21 +104,23 @@ function Gallery() {
         {/* Contenedor Scrollable */}
         <div
           ref={containerRef}
-          className="flex gap-6 overflow-x-auto px-4 sm:px-10 py-4 scrollbar-hide scroll-smooth snap-x"
+          className="flex gap-6 overflow-x-auto  sm:px-10 py-4 scrollbar-hide scroll-smooth snap-x"
         >
           {items.map((item, index) => (
             <div
               key={index}
-              className="snap-start min-w-full sm:min-w-[300px] sm:max-w-[320px] md:min-w-[340px] md:max-w-[360px] lg:min-w-[380px] lg:max-w-[400px] h-[220px] sm:h-[240px] md:h-[260px] lg:h-[280px] bg-[#6c6f5a] rounded-lg shadow-md p-4 text-center relative group hover:shadow-xl transition overflow-hidden flex-shrink-0"
+              className="snap-start w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 h-auto bg-[#6c6f5a] rounded-lg shadow-md text-center relative group hover:shadow-xl transition overflow-hidden flex-shrink-0"
             >
               {/* Contenido visible normalmente */}
               <div className="group-hover:opacity-0 transition-opacity duration-300">
                 <img
                   src={item.img}
                   alt={`Imagen ${index + 1}`}
-                  className="w-full h-full md:h-36 lg:h-52 object-contain mb-2 rounded-md"
+                  className="w-full h-40 md:h-44 lg:h-48 object-cover mb-4 rounded-md"
                 />
-                <p className="text-white text-sm md:text-base">{item.text}</p>
+                <p className="text-white text-sm md:text-base min-h-[60px] ml-2 mr-2">
+                  {item.text}
+                </p>
               </div>
 
               {/* Overlay al hacer hover */}
@@ -133,7 +134,7 @@ function Gallery() {
         {/* Botón Derecha */}
         <button
           onClick={() => handleScroll("right")}
-          className="absolute right-0 z-10 bg-slate-800 p-2 rounded-full hover:bg-slate-700"
+          className="absolute right-0 z-10 bg-yellow-600 bg-opacity-50 p-2 rounded-full hover:bg-yellow-600"
         >
           <ChevronRightIcon className="h-6 w-6 text-white" />
         </button>

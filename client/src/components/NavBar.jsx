@@ -41,13 +41,13 @@ function NavBar() {
   }, [isMenuOpen]);
 
   return (
-    <nav className="h-16 fixed top-0 w-full py-0 z-50 shadow-md bg-[#6c6f5a]" >
+    <nav className="h-12 fixed top-0 w-full py-0 z-50 shadow-md bg-[#6c6f5a]" >
 
       <div className="flex justify-between items-center h-full px-5 lg:px-10">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link to="home" smooth={true} duration={1000} className="cursor-pointer">
-            <div className="h-10 lg:h-14 flex items-center gap-2 text-white">
+            <div className="h-10 lg:h-10 flex items-center gap-2 text-white">
               <img
                 src={`${import.meta.env.BASE_URL}logoPE.png`}
                 alt="MUSEO DE PABLO"

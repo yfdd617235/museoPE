@@ -77,13 +77,13 @@ const HomaPage = () => {
           {/* Logo */}
           <div className="absolute flex flex-col px-6 items-center text-white">
             <h1
-              className="text-4xl md:text-6xl font-bold mb-4"
+              className="text-2xl md:text-5xl font-bold mb-4"
               style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 1)" }}
             >
               MUSEO DE PABLO
             </h1>
             <p
-              className="text-lg md:text-2xl font-light text-justify"
+              className="text-lg md:text-xl font-light text-justify"
               style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 1)" }}
             >
               {t('jumbotron.message')}
@@ -91,9 +91,9 @@ const HomaPage = () => {
           </div>
         </div>
 
-        {/*About us*/}
-        <div id="history" className="snap-section section md:pt-36 text-sm md:text-base">
-          <div className="bg-[#6c6f5a] text-[#F2F0E4]">
+        {/*History*/}
+        <div id="history" className="snap-section section mt-24 text-sm md:text-base">
+          <div className="">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60">
 
               <div className="md:w-1/2 pt-10 md:py-10">
@@ -123,7 +123,7 @@ const HomaPage = () => {
                 >Your browser does not support the video tag.
                 </video>
               </div> */}
-              <div className="flex-shrink-0 md:w-1/2 flex justify-center items-center">
+              <div className="w-full flex-shrink-0 md:w-1/2 flex justify-center items-center">
                 <div className="w-full aspect-video">
                   <iframe
                     className="w-full h-full"
@@ -166,10 +166,41 @@ const HomaPage = () => {
         </div>
 
 
-        {/*Nuestros Clientes */}
-        <div id="legacy
-        " className="snap-section section">
+        {/*Gallery */}
+        <div id="gallery" className="snap-section section my-24">
           <CarruselClientes />
+        </div>
+
+        {/*Legacy*/}
+        <div id="legacy" className="snap-section section text-sm md:text-base">
+          <div className="bg-black text-[#F2F0E4]">
+            <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60 py-10">
+
+              <div className="md:pt-10 md:py-10">
+                <h2 className="md:text-2xl font-bold text-center">{t('legacy.title')}</h2> <br />
+                <p className="text-justify">
+                  {t('legacy.text')}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/*Founder*/}
+          <div className="bg-[#F2F0E4]">
+            <div className="py-10 gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:w-1/2 2xl:w-1/2">
+
+              <div className="md:w-1/4 pt-10 md:py-10 flex items-center justify-center">
+                <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}founder.png`} alt="Logo" />
+              </div>
+
+              <div className="md:w-3/4 pb-10 md:py-10">
+                <p className="mt-2 text-gray-700 leading-relaxed text-justify">
+                  {t('founder.text')}
+                </p>
+              </div>
+
+            </div>
+          </div>
         </div>
 
 
@@ -177,9 +208,14 @@ const HomaPage = () => {
         <div id="contact" className="snap-section section bg-black text-white w-full text-left mt-16 p-4 md:p-8 bg-repeat bg-center min-h-[200px]">
           <div className="px-4 md:px-32 lg:px-48">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="flex items-center justify-center">
-                <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}logoPE.png`} alt="Logo" />
-              </div>
+              <div className="h-10 lg:h-14 flex items-center justify-center gap-2 text-white">
+              <img
+                src={`${import.meta.env.BASE_URL}logoPE.png`}
+                alt="MUSEO DE PABLO"
+                className="h-full w-auto object-contain"
+              />
+              <p>MUSEO DE PABLO</p>
+            </div>
 
               <div className="flex items-center justify-left p-6">
                 <div className="flex flex-col space-y-3 text-left">
@@ -192,7 +228,7 @@ const HomaPage = () => {
                     rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-xs md:text-sm"
                   >
-                    <EnvelopeIcon className="w-4 h-4 text-white" />
+                    <EnvelopeIcon className="w-4 h-4 text-[#fffb1f]" />
                     <span >gerencia@museodepablo.com</span>
                   </a>
 
@@ -208,7 +244,7 @@ const HomaPage = () => {
                         role="img"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
-                        fill="currentColor"
+                        fill="#fffb1f"
                         className="w-4 h-4"
                       >
                         <path d="M22.23 0H1.77C.792 0 0 .774 0 1.728v20.543C0 23.225.792 24 1.77 24h20.46c.978 0 1.77-.774 1.77-1.729V1.728C24 .774 23.208 0 22.23 0zM7.12 20.452H3.56V9h3.56v11.452zm-1.78-13.01a2.07 2.07 0 11-.001-4.138 2.07 2.07 0 010 4.138zm15.18 13.01h-3.56v-5.941c0-1.417-.028-3.245-1.975-3.245-1.976 0-2.278 1.543-2.278 3.14v6.045h-3.56V9h3.42v1.563h.049c.476-.9 1.636-1.846 3.368-1.846 3.602 0 4.267 2.369 4.267 5.452v6.283z" />
@@ -226,7 +262,7 @@ const HomaPage = () => {
                         role="img"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 16 16"
-                        fill="currentColor"
+                        fill="#fffb1f"
                         className="w-4 h-4"
                       >
                         <path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"></path>
@@ -245,7 +281,7 @@ const HomaPage = () => {
                         role="img"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
-                        fill="currentColor"
+                        fill="#fffb1f"
                         className="w-4 h-4"
                       >
                         <path d="M12 2.163c3.2 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.918 4.918.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.147 3.252-1.692 4.771-4.918 4.918-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.147-4.771-1.692-4.918-4.918-.058-1.266-.07-1.65-.07-4.85s.012-3.584.07-4.85c.147-3.252 1.692-4.771 4.918-4.918 1.266-.058 1.65-.07 4.85-.07m0-2.163C8.755 0 8.338.012 7.054.07 2.9.228.228 2.9.07 7.054.012 8.338 0 8.755 0 12s.012 3.662.07 4.946C.228 21.1 2.9 23.772 7.054 23.93 8.338 23.988 8.755 24 12 24s3.662-.012 4.946-.07C21.1 23.772 23.772 21.1 23.93 16.946 23.988 15.662 24 15.245 24 12s-.012-3.662-.07-4.946C23.772 2.9 21.1.228 16.946.07 15.662.012 15.245 0 12 0zM12 5.838a6.162 6.162 0 1 0 6.162 6.162A6.168 6.168 0 0 0 12 5.838zm0 10.137a3.975 3.975 0 1 1 3.975-3.975A3.979 3.979 0 0 1 12 15.975zm4.406-10.845a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z" />
@@ -263,7 +299,7 @@ const HomaPage = () => {
                         role="img"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
-                        fill="#ffffff"
+                        fill="#fffb1f"
                         className="w-4 h-4"
                       >
                         <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.35C0 23.403.597 24 1.325 24h21.35C23.403 24 24 23.403 24 22.675V1.325C24 .597 23.403 0 22.675 0zm-4.133 12h-3.775v10h-4.017v-10h-2.5V9.5h2.5V7.5c0-2.775 1.533-4.5 4.5-4.5 1.275 0 2.5.1 2.5.1v2.758h-1.5c-1.25 0-1.5.59-1.5 1.5v1.492h3.021l-.48 3.5z" />
@@ -278,7 +314,7 @@ const HomaPage = () => {
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        fill="#ffffff"
+                        fill="#fffb1f"
                         viewBox="0 0 24 24"
                         className="w-4 h-4"
                       >
@@ -286,6 +322,12 @@ const HomaPage = () => {
                       </svg>
                     </a>
                   </div>
+
+                  <button
+                    className="bg-[#fffb1f] text-black px-6 py-1 rounded-full hover:bg-[#5a5d4a] transition duration-300 text-xs md:text-sm lg:text-lg"
+                  >
+                    {t('reservation.text')}
+                  </button>
 
 
                 </div>

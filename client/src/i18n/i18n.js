@@ -46,22 +46,16 @@ const resources = {
                 tooltip8: "What lessons do we take from the destruction left behind?",
                 tooltip9: "A look back at history and its lasting effect on society."
             },
-            ourcustomers: {
-                title: "Our Customers",
-                carruseltext1: "Commitment to quality in every service offered.",
-                carruseltext2: "Satisfaction guarantee in every project.",
-                carruseltext3: "Personalized attention and constant commitment.",
-                carruseltext4: "Effective collaboration that enhances our services.",
-                title1: "100+ Satisfied Clients",
-                text1: "We trust in solid and lasting relationships, providing a satisfying experience for every client.",
-                title2: "200+ Projects Executed",
-                text2: "Over 200 projects successfully completed, we always ensure professionalism and quality at every stage.",
-                title3: "Coverage in 15+ Sectors",
-                text3: "We offer personalized solutions for various industries, adapting to the specific needs of each sector.",
-                title4: "95% Client Retention",
-                text4: "Our dedication and quality are reflected in a high client retention rate year after year.",
-
+            legacy: {
+                title: "El Legado",
+                text: "A legacy is not always something inherited with pride; sometimes, it is also the weight of a history that hurts, that divides, and that demands reflection. In Colombia, the name Pablo Escobar does not only evoke the most feared drug lord of his time, but also a dark chapter that scarred entire generations with blood, fear, and silence.\n\nThe Pablo Museum was born as a response to the need to narrate that legacy with truth, critical thought, and memory. Not to perpetuate the man’s image, but to understand the magnitude of his actions and how they shaped the social, political, and cultural fabric of a country still trying to heal its wounds.\n\nThis space does not seek to glorify, justify, or condemn in a one-sided way. It seeks to remember. It seeks to invite deep reflection on the roots of drug trafficking, the fragility of our institutions, and the resilience of those who fought for life amid chaos. It is an opportunity for new generations to understand that the true legacy is not in mansions, luxury, or power, but in the human consequences left by a poorly told story.\n\nThe Legacy is, then, an invitation to look back with honesty, to confront what is uncomfortable, and to turn memory into a tool for collective awareness. Because only by understanding our past can we build a different future."
             },
+              founder: {
+                text: "\"I have personally experienced the aftermath of an era marked by violence and impunity. My goal in creating this space is to foster intergenerational dialogue that helps us understand the past in order to build a more conscious, informed, and resilient future.\" – Claudia Patricia Escárraga"
+              },
+              reservations: {
+                button: "Reservations"
+              },
             contact: {
                 contact: "Contact",
                 location: "Location"
@@ -113,21 +107,16 @@ const resources = {
                 tooltip9: "Un vistazo al pasado y su efecto duradero en la sociedad."
             },
 
-            ourcustomers: {
-                title: "Nuestros Clientes",
-                carruseltext1: "Compromiso de calidad en cada servicio ofrecido.",
-                carruseltext2: "Garantía de satisfacción en cada proyecto.",
-                carruseltext3: "Atención personalizada y compromiso constante.",
-                carruseltext4: "Colaboración efectiva que potencia nuestros servicios.",
-                title1: "100+ Clientes Satisfechos",
-                text1: "Confiamos en relaciones sólidas y duraderas, brindando una experiencia satisfactoria a cada cliente.",
-                title2: "200+ Proyectos Ejecutados",
-                text2: "Más de 200 proyectos completados con éxito, garantizando profesionalismo y calidad en cada etapa.",
-                title3: "Cobertura en 15+ Sectores",
-                text3: "Ofrecemos soluciones personalizadas para diversas industrias, adaptándonos a las necesidades específicas de cada sector.",
-                title4: "95% Retención de Clientes",
-                text4: "Nuestra dedicación y calidad se reflejan en un alto índice de retención de clientes año tras año.",
-            },
+            legacy: {
+                title: "El Legado",
+                text: "El legado no siempre es aquello que se hereda con orgullo; a veces, también es la carga de una historia que duele, que divide, y que interpela. En Colombia, el nombre de Pablo Escobar no solo evoca al narcotraficante más temido de su época, sino también a un capítulo oscuro que marcó generaciones enteras con sangre, miedo y silencios.\n\nEl Museo de Pablo nace como una respuesta a la necesidad de narrar ese legado desde la verdad, la crítica y la memoria. No para perpetuar la figura del hombre, sino para entender la dimensión de sus actos y cómo estos moldearon el tejido social, político y cultural de un país que aún hoy intenta sanar sus heridas.\n\nEste espacio no busca glorificar, justificar ni condenar de forma unilateral. Busca recordar. Busca invitar a la reflexión profunda sobre las raíces del narcotráfico, sobre la fragilidad de nuestras instituciones, sobre la resistencia de quienes lucharon por la vida en medio del caos. Es una oportunidad para que nuevas generaciones comprendan que el verdadero legado no está en las mansiones, los lujos o el poder, sino en las consecuencias humanas que deja una historia mal contada.\n\nEl Legado es, entonces, una invitación a mirar atrás con honestidad, a confrontar lo incómodo, y a transformar la memoria en una herramienta de conciencia colectiva. Porque solo entendiendo nuestro pasado seremos capaces de construir un futuro distinto."
+  },
+              founder: {
+                text: "\"He vivido de cerca las secuelas de una época marcada por la violencia y la impunidad. Mi objetivo al crear este espacio es abrir un diálogo intergeneracional que nos permita comprender el pasado para construir un futuro más consciente, informado y resiliente.\" – Claudia Patricia Escárraga"
+              },
+              reservations: {
+                button: "Reservas"
+              },
             contact: {
                 contact: "Contacto",
                 location: "Ubicación"
