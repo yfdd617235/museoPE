@@ -209,12 +209,12 @@ const HomaPage = () => {
           <div className="px-4 md:px-32 lg:px-48">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-start justify-center">
               <div className="h-40 lg:h-40 flex p-6">
-              <img
-                src={`${import.meta.env.BASE_URL}logoPE.png`}
-                alt="MUSEO DE PABLO"
-                className="h-full w-auto object-contain"
-              />
-            </div>
+                <img
+                  src={`${import.meta.env.BASE_URL}logoPE.png`}
+                  alt="MUSEO DE PABLO"
+                  className="h-full w-auto object-contain"
+                />
+              </div>
 
               <div className="flex items-center justify-left p-6">
                 <div className="flex flex-col space-y-3 text-left">
@@ -337,7 +337,7 @@ const HomaPage = () => {
                   <h5 className="text-xs md:text-sm lg:text-lg font-bold">{t('contact.location')}</h5>
                   <div className="flex items-center">
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=Cra+43A+%233+Sur+-130,+Torre+2,+Oficina+915,+CE+Milla+de+Oro,+Medellín,+Antioquia"
+                      href="https://www.google.com/maps/place/Av.+Las+Palmas,+Antioquia/@6.1953763,-75.549539,938m/data=!3m1!1e3!4m6!3m5!1s0x8e442823df73c589:0x246a17cb9295dddb!8m2!3d6.1949507!4d-75.5474952!16s%2Fg%2F11byl9h1jm?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center text-xs md:text-sm hover:underline"
@@ -351,7 +351,7 @@ const HomaPage = () => {
                       >
                         <path d="M16.114-0.011c-6.559 0-12.114 5.587-12.114 12.204 0 6.93 6.439 14.017 10.77 18.998 0.017 0.020 0.717 0.797 1.579 0.797h0.076c0.863 0 1.558-0.777 1.575-0.797 4.064-4.672 10-12.377 10-18.998 0-6.618-4.333-12.204-11.886-12.204zM16.515 29.849c-0.035 0.035-0.086 0.074-0.131 0.107-0.046-0.032-0.096-0.072-0.133-0.107l-0.523-0.602c-4.106-4.71-9.729-11.161-9.729-17.055 0-5.532 4.632-10.205 10.114-10.205 6.829 0 9.886 5.125 9.886 10.205 0 4.474-3.192 10.416-9.485 17.657zM16.035 6.044c-3.313 0-6 2.686-6 6s2.687 6 6 6 6-2.687 6-6-2.686-6-6-6zM16.035 16.044c-2.206 0-4.046-1.838-4.046-4.044s1.794-4 4-4c2.207 0 4 1.794 4 4 0.001 2.206-1.747 4.044-3.954 4.044z" />
                       </svg>
-                      <span>Medellín, Antioquia</span>
+                      <span>Calle 12 # 10-27 Medellín, Vía las Palmas, Antioquia</span>
                     </a>
                   </div>
 
