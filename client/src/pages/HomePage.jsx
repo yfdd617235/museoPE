@@ -337,7 +337,7 @@ const HomaPage = () => {
                   <h5 className="text-xs md:text-sm lg:text-lg font-bold">{t('contact.location')}</h5>
                   <div className="flex items-center">
                     <a
-                      href="https://www.google.com/maps/place/Av.+Las+Palmas,+Antioquia/@6.1953763,-75.549539,938m/data=!3m1!1e3!4m6!3m5!1s0x8e442823df73c589:0x246a17cb9295dddb!8m2!3d6.1949507!4d-75.5474952!16s%2Fg%2F11byl9h1jm?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
+                      href="https://www.google.com/maps/place/6%C2%B012'44.2%22N+75%C2%B032'45.2%22W/@6.2122788,-75.5484581,751m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d6.2122788!4d-75.5458832?hl=en&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center text-xs md:text-sm hover:underline"
