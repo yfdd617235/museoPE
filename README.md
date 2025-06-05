@@ -1,2 +1,2 @@
 # museoPE
-Museo de Pablo Escober
+Museo de Pablo Escobar

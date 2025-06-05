@@ -78,11 +78,11 @@ function NavBar() {
               <span className="block h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-[#ebcd83]" ></span>
             </Link>
           ))}
-          <div className="flex items-center space-x-3">
-            <button onClick={() => changeLanguage('en')} className="w-5 h-5">
+          <div className="flex items-center space-x-5">
+            <button onClick={() => changeLanguage('en')} className="w-6 h-6">
               <img src={`${import.meta.env.BASE_URL}enFlag.png`} alt="English" />
             </button>
-            <button onClick={() => changeLanguage('es')} className="w-5 h-5">
+            <button onClick={() => changeLanguage('es')} className="w-6 h-6">
               <img src={`${import.meta.env.BASE_URL}esFlag.png`} alt="Español" />
             </button>
           </div>
@@ -98,7 +98,7 @@ function NavBar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div ref={menuRef} className="lg:hidden absolute top-16 left-0 w-full bg-white shadow-lg z-50">
+        <div ref={menuRef} className="lg:hidden absolute top-16 left-0 w-full bg-black shadow-lg z-50">
           <div className="flex flex-col space-y-4 px-8 py-6">
             {['history', 'gallery', 'legacy', 'contact'].map((section) => (
               <Link
@@ -107,7 +107,7 @@ function NavBar() {
                 smooth={true}
                 duration={1000}
                 onClick={closeMenu}
-                className="font-bold hover:text-blue-900"
+                className="font-bold text-white hover:text-yellow-500"
               >
                 {t(`navbar.${section}`)}
               </Link>
