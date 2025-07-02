@@ -79,7 +79,7 @@ const HomaPage = () => {
             <img
               src={`${import.meta.env.BASE_URL}MuseoPabloLetra.png`}
               alt="MUSEO DE PABLO"
-              className="h-auto w-1/2 object-contain"
+              className="h-auto w-2/3 object-contain"
             /> <br />
             <p
               className="text-lg md:text-xl font-light text-justify"
@@ -105,11 +105,11 @@ const HomaPage = () => {
 
               <div className="md:w-1/2 pt-14 md:py-10">
                 <h2 className="md:text-2xl font-bold text-center">{t('whoarewe.whoarewe')}</h2> <br />
-                <p className="text-justify">
+                <p className="">
                   {t('whoarewe.whoarewetext1')}
                 </p>
                 <br />
-                <p className="text-justify">
+                <p className="">
                   {t('whoarewe.whoarewetext2')}
                 </p>
               </div>
@@ -153,7 +153,7 @@ const HomaPage = () => {
 
               <div className="md:w-2/3 pt-10 md:py-10">
                 <h2 className="text-black font-bold md:text-xl">{t('whoarewe.purpose')}</h2>
-                <p className="mt-2 text-black leading-relaxed text-justify">
+                <p className="mt-2 text-black leading-relaxed">
                   {t('whoarewe.purposetext')}
                 </p>
               </div>
@@ -163,7 +163,7 @@ const HomaPage = () => {
 
               <div className="md:w-2/3 pb-10 md:py-10">
                 <h2 className="text-black font-bold md:text-xl">{t('whoarewe.approach')}</h2>
-                <p className="mt-2 text-black leading-relaxed text-justify">
+                <p className="mt-2 text-black leading-relaxed">
                   {t('whoarewe.approachtext')}
                 </p>
               </div>
@@ -178,22 +178,22 @@ const HomaPage = () => {
           <CarruselClientes />
         </div>
 
-        <div className="h-20 flex justify-center items-center bg-[#BD612E]">
+        {/* <div className="h-20 flex justify-center items-center bg-[#BD612E]">
           <button
             className="bg-[#F5E9D6] text-[#633F20] font-bold px-10 py-1 border-2 border-[#633F20] hover:bg-[#C47630] transition duration-300 text-xs md:text-sm lg:text-lg"
           >
             {t('reservation.text')}
           </button>
-        </div>
+        </div> */}
 
         {/*Legacy*/}
         <div id="legacy" className="bg-[#F5E9D6] snap-section section text-sm md:text-base">
           <div className="text-black">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60 py-10">
 
-              <div className="py-20">
+              <div className="pb-5">
                 <h2 className="md:text-2xl font-bold text-center">{t('legacy.title')}</h2> <br />
-                <p className="text-justify">
+                <p className="">
                   {t('legacy.text')}
                 </p>
               </div>
@@ -209,7 +209,7 @@ const HomaPage = () => {
               </div>
 
               <div className="text-white md:w-3/4 pb-10 md:py-10">
-                <p className="mt-2 leading-relaxed text-justify">
+                <p className="mt-2 leading-relaxed">
                   {t('founder.text')}
                 </p> <br />
                 <p className="font-bold">Claudia Patricia Escárraga</p>
