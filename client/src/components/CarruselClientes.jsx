@@ -87,7 +87,7 @@ function Gallery() {
   };
 
   return (
-    <div className="py-20 bg-[#F5E9D6]">
+    <div className="py-28 bg-[#F5E9D6]">
        {/* <div className="text-center py-5">
           <h2 className="text-2xl font-bold">{t("gallery.title")}</h2>
         </div> */}
@@ -109,7 +109,7 @@ function Gallery() {
             {items.map((item, index) => (
               <div
                 key={index}
-                className="snap-start w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 h-auto bg-[#C47630] rounded-lg shadow-md text-center relative group hover:shadow-xl transition overflow-hidden flex-shrink-0"
+                className="snap-start w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 h-auto bg-[#F5E9D6] rounded-lg shadow-md text-center relative group hover:shadow-xl transition overflow-hidden flex-shrink-0"
               >
                 {/* Contenido visible normalmente */}
                 <div className="group-hover:opacity-0 transition-opacity duration-300">
@@ -118,14 +118,14 @@ function Gallery() {
                     alt={`Imagen ${index + 1}`}
                     className="w-full h-40 md:h-44 lg:h-48 object-cover mb-4 rounded-md"
                   />
-                  <p className="text-white text-sm md:text-base min-h-[60px] ml-2 mr-2">
+                  <p className="text-[#633F20] text-sm md:text-base min-h-[60px] ml-2 mr-2">
                     {item.text}
                   </p>
                 </div>
 
                 {/* Overlay al hacer hover */}
-                <div className="absolute inset-0 bg-[#C47630] bg-opacity-90 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-                  <p className="text-white text-sm md:text-base">{item.tooltip}</p>
+                <div className="absolute inset-0 bg-[#F5E9D6] bg-opacity-90 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                  <p className="text-[#633F20] text-sm md:text-base">{item.tooltip}</p>
                 </div>
               </div>
             ))}

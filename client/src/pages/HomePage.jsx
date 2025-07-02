@@ -178,7 +178,7 @@ const HomaPage = () => {
           <CarruselClientes />
         </div>
 
-        <div className="h-20 flex justify-center items-center bg-[#F5E9D6]">
+        <div className="h-20 flex justify-center items-center bg-[#BD612E]">
           <button
             className="bg-[#F5E9D6] text-[#633F20] font-bold px-10 py-1 border-2 border-[#633F20] hover:bg-[#C47630] transition duration-300 text-xs md:text-sm lg:text-lg"
           >
@@ -187,8 +187,8 @@ const HomaPage = () => {
         </div>
 
         {/*Legacy*/}
-        <div id="legacy" className="bg-[#6B6F5B] snap-section section text-sm md:text-base">
-          <div className="text-[#F2F0E4]">
+        <div id="legacy" className="bg-[#F5E9D6] snap-section section text-sm md:text-base">
+          <div className="text-black">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60 py-10">
 
               <div className="md:pt-10 md:py-10">
@@ -201,17 +201,18 @@ const HomaPage = () => {
           </div>
 
           {/*Founder*/}
-          <div className="bg-[#F5E9D6]">
+          <div className="bg-[#C47630]">
             <div className="py-20 gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:w-1/2 2xl:w-1/2">
 
               <div className="md:w-1/4 pt-10 md:py-10 flex items-center justify-center">
                 <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}founder.png`} alt="Logo" />
               </div>
 
-              <div className="md:w-3/4 pb-10 md:py-10">
-                <p className="mt-2 text-black leading-relaxed text-justify">
+              <div className="text-white md:w-3/4 pb-10 md:py-10">
+                <p className="mt-2 leading-relaxed text-justify">
                   {t('founder.text')}
-                </p>
+                </p> <br />
+                <p className="font-bold">Claudia Patricia Escárraga</p>
               </div>
 
             </div>
@@ -328,12 +329,13 @@ const HomaPage = () => {
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        fill="#ffffff"
-                        viewBox="0 0 24 24"
+                        viewBox="0 0 1200 1227"
+                        fill="white"
                         className="w-4 h-4"
                       >
-                        <path d="M22.46 6c-.77.34-1.6.57-2.48.67a4.34 4.34 0 0 0 1.91-2.39c-.84.5-1.77.87-2.76 1.07A4.303 4.303 0 0 0 16.54 5a4.3 4.3 0 0 0-4.3 4.3c0 .34.04.67.11 1a12.23 12.23 0 0 1-8.86-4.48c-.36.62-.56 1.34-.56 2.1 0 1.44.73 2.72 1.83 3.47-.67-.02-1.29-.2-1.83-.5v.05c0 2.01 1.43 3.68 3.34 4.05-.35.1-.73.15-1.12.15-.27 0-.53-.02-.78-.07.53 1.67 2.07 2.88 3.91 2.91-1.43 1.12-3.23 1.79-5.19 1.79-.34 0-.67-.02-1-.07 1.83 1.17 4 1.86 6.32 1.86 7.62 0 11.77-6.3 11.77-11.75 0-.18 0-.35-.01-.53a8.31 8.31 0 0 0 2.04-2.12z" />
+                        <path d="M711.4 597.5L1176.5 0H1072.6L667.9 522.6 342.2 0H0L490.3 727.4 0 1227h103.9l429.2-541.1 346.3 541.1h341.5L711.4 597.5zM593.2 693.6l-49.8-77.4L153.6 81.4h139.4l309.6 481.2 49.8 77.4 406.5 631.5H919.1L593.2 693.6z" />
                       </svg>
+
                     </a>
                   </div>
 

@@ -7,10 +7,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Helvetica', 'Arial', 'sans-serif'], // Aquí agregas Helvetica como la fuente principal
+        body: ['Barlow', 'sans-serif'],
+        title: ['SouvenirBold', 'serif'],
+        //sans: ['Helvetica', 'Arial', 'sans-serif'], // puedes dejarla si aún la usas en otras partes
       },
     },
   },
   plugins: [],
 }
-

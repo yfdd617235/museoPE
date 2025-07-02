@@ -7,6 +7,26 @@ body {
   color: white; */
 }
 
+
+/*Fonts*/
+@font-face {
+  font-family: 'SouvenirBold';
+  src: url('/fonts/ITC Souvenir Std Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/fonts/Barlow-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
 /* Ocultar scrollbar en navegadores como Chrome, Safari */
 ::-webkit-scrollbar {
   display: none;
