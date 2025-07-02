@@ -146,22 +146,22 @@ const HomaPage = () => {
           </div>
 
           {/*Mision & Vision*/}
-          <div className="bg-gradient-to-b from-white to-[#F5E9D6]">
+          <div className="bg-[#6B6F5B]">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60">
 
               <div className="md:w-2/3 pt-10 md:py-10">
-                <h2 className="font-bold md:text-xl">{t('whoarewe.purpose')}</h2>
-                <p className="mt-2 text-gray-700 leading-relaxed text-justify">
+                <h2 className="text-white font-bold md:text-xl">{t('whoarewe.purpose')}</h2>
+                <p className="mt-2 text-[#F5E9D6] leading-relaxed text-justify">
                   {t('whoarewe.purposetext')}
                 </p>
               </div>
 
               {/* Barra divisoria */}
-              <div className="hidden md:block h-40 w-[2px] bg-[#ebcd83]"></div>
+              <div className="hidden md:block h-40 w-[2px] bg-[#F5E9D6]"></div>
 
               <div className="md:w-2/3 pb-10 md:py-10">
-                <h2 className="font-bold md:text-xl">{t('whoarewe.approach')}</h2>
-                <p className="mt-2 text-gray-700 leading-relaxed text-justify">
+                <h2 className="text-white font-bold md:text-xl">{t('whoarewe.approach')}</h2>
+                <p className="mt-2 text-[#F5E9D6] leading-relaxed text-justify">
                   {t('whoarewe.approachtext')}
                 </p>
               </div>
@@ -172,7 +172,7 @@ const HomaPage = () => {
 
 
         {/*Gallery */}
-        <div id="gallery" className="snap-section section my-24">
+        <div id="gallery" className="snap-section section my-36">
           <CarruselClientes />
         </div>
 
@@ -191,8 +191,8 @@ const HomaPage = () => {
           </div>
 
           {/*Founder*/}
-          <div className="bg-[#F5E9D6]">
-            <div className="py-10 gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:w-1/2 2xl:w-1/2">
+          <div className="">
+            <div className="py-36 gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:w-1/2 2xl:w-1/2">
 
               <div className="md:w-1/4 pt-10 md:py-10 flex items-center justify-center">
                 <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}founder.png`} alt="Logo" />
@@ -210,7 +210,7 @@ const HomaPage = () => {
 
 
         {/* Prefooter Section */}
-        <div id="contact" className="snap-section section bg-[#633F20] text-white w-full text-left mt-16 p-4 md:p-8 bg-repeat bg-center min-h-[200px] flex justify-center">
+        <div id="contact" className="snap-section section bg-[#633F20] text-white w-full text-left p-4 md:p-8 bg-repeat bg-center min-h-[200px] flex justify-center">
           <div className="px-4 md:px-32 lg:px-48">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-start justify-center">
               <div className="h-40 lg:h-40 flex p-6">

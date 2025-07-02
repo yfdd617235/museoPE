@@ -109,7 +109,7 @@ function Gallery() {
           {items.map((item, index) => (
             <div
               key={index}
-              className="snap-start w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 h-auto bg-[#6B6F5B] rounded-lg shadow-md text-center relative group hover:shadow-xl transition overflow-hidden flex-shrink-0"
+              className="snap-start w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 h-auto bg-[#C47630] rounded-lg shadow-md text-center relative group hover:shadow-xl transition overflow-hidden flex-shrink-0"
             >
               {/* Contenido visible normalmente */}
               <div className="group-hover:opacity-0 transition-opacity duration-300">
@@ -124,7 +124,7 @@ function Gallery() {
               </div>
 
               {/* Overlay al hacer hover */}
-              <div className="absolute inset-0 bg-[#6B6F5B] bg-opacity-90 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+              <div className="absolute inset-0 bg-[#BD612E] bg-opacity-90 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
                 <p className="text-white text-sm md:text-base">{item.tooltip}</p>
               </div>
             </div>
