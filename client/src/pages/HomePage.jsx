@@ -141,7 +141,7 @@ const HomaPage = () => {
           </div>
 
           {/*Mision & Vision*/}
-          <div className="bg-gradient-to-b from-white to-[#F2F0E4]">
+          <div className="bg-gradient-to-b from-white to-[#F5E9D6]">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60">
 
               <div className="md:w-2/3 pt-10 md:py-10">
@@ -186,7 +186,7 @@ const HomaPage = () => {
           </div>
 
           {/*Founder*/}
-          <div className="bg-[#F2F0E4]">
+          <div className="bg-[#F5E9D6]">
             <div className="py-10 gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:w-1/2 2xl:w-1/2">
 
               <div className="md:w-1/4 pt-10 md:py-10 flex items-center justify-center">

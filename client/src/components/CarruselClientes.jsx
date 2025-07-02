@@ -87,7 +87,7 @@ function Gallery() {
   };
 
   return (
-    <div className="py-16 bg-[#F2F0E4]">
+    <div className="py-16 bg-[#F5E9D6]">
       <div className="text-center mb-10">
         <h2 className="text-2xl font-bold">{t("gallery.title")}</h2>
       </div>

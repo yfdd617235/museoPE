@@ -41,19 +41,18 @@ function NavBar() {
   }, [isMenuOpen]);
 
   return (
-    <nav className="h-12 fixed top-0 w-full py-0 z-50 shadow-md bg-[#6c6f5a]" >
+    <nav className="h-16 fixed top-0 w-full py-0 z-50 shadow-md bg-[#F5E9D6]" >
 
       <div className="flex justify-between items-center h-full px-5 lg:px-10">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link to="home" smooth={true} duration={1000} className="cursor-pointer">
-            <div className="h-10 lg:h-10 flex items-center gap-2 text-white">
+            <div className="h-36 lg:h-40 flex items-center text-white">
               <img
                 src={`${import.meta.env.BASE_URL}logoPE.png`}
                 alt="MUSEO DE PABLO"
                 className="h-full w-auto object-contain"
               />
-              <p>MUSEO DE PABLO</p>
             </div>
           </Link>
         </div>
@@ -66,16 +65,16 @@ function NavBar() {
               to={section}
               smooth={true}
               duration={1000}
-              className="cursor-pointer font-bold relative group text-[#F2F0E4]"
+              className="cursor-pointer font-bold relative group text-[#633F20]"
               style={{
                 transition: 'color 0.3s',
               }}
-              onMouseEnter={(e) => (e.target.style.color = '#ebcd83')}
+              onMouseEnter={(e) => (e.target.style.color = '#BD612E')}
               onMouseLeave={(e) => (e.target.style.color = '')}
             >
 
               {t(`navbar.${section}`)}
-              <span className="block h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-[#ebcd83]" ></span>
+              <span className="block h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-[#BD612E]" ></span>
             </Link>
           ))}
           <div className="flex items-center space-x-5">
@@ -91,14 +90,14 @@ function NavBar() {
         {/* Hamburger Menu Icon for Small Screens */}
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
-            <Bars3Icon className="h-8 w-8 text-gray-800" />
+            <Bars3Icon className="h-8 w-8 text-[#C47630]" />
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div ref={menuRef} className="lg:hidden absolute top-16 left-0 w-full bg-black shadow-lg z-50">
+        <div ref={menuRef} className="lg:hidden absolute top-16 left-0 w-full bg-[#F5E9D6] shadow-lg z-50">
           <div className="flex flex-col space-y-4 px-8 py-6">
             {['history', 'gallery', 'legacy', 'contact'].map((section) => (
               <Link
@@ -107,7 +106,7 @@ function NavBar() {
                 smooth={true}
                 duration={1000}
                 onClick={closeMenu}
-                className="font-bold text-white hover:text-yellow-500"
+                className="cursor-pointer font-bold text-[#633F20] hover:text-[#BD612E]"
               >
                 {t(`navbar.${section}`)}
               </Link>
