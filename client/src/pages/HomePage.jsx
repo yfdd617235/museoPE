@@ -76,17 +76,11 @@ const HomaPage = () => {
 
           {/* Logo */}
           <div className="absolute flex flex-col px-6 items-center text-white">
-            {/* <h1
-              className="text-2xl md:text-5xl font-bold mb-4"
-              style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 1)" }}
-            >
-              MUSEO DE PABLO
-            </h1> */}
             <img
-                src={`${import.meta.env.BASE_URL}MuseoPabloLetra.png`}
-                alt="MUSEO DE PABLO"
-                className="h-auto w-1/2 object-contain"
-              /> <br />
+              src={`${import.meta.env.BASE_URL}MuseoPabloLetra.png`}
+              alt="MUSEO DE PABLO"
+              className="h-auto w-1/2 object-contain"
+            /> <br />
             <p
               className="text-lg md:text-xl font-light text-justify"
               style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 1)" }}
@@ -96,12 +90,20 @@ const HomaPage = () => {
           </div>
         </div>
 
+        <div className="h-20 flex justify-center items-center bg-[#F5E9D6]">
+          <button
+            className="bg-[#F5E9D6] text-[#633F20] font-bold px-10 py-1 border-2 border-[#633F20] hover:bg-[#C47630] transition duration-300 text-xs md:text-sm lg:text-lg"
+          >
+            {t('reservation.text')}
+          </button>
+        </div>
+
         {/*History*/}
-        <div id="history" className="snap-section section mt-24 text-sm md:text-base">
+        <div id="history" className="snap-section section bg-[#6B6F5B] text-[#F5E9D6] text-sm md:text-base">
           <div className="">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60">
 
-              <div className="md:w-1/2 pt-10 md:py-10">
+              <div className="md:w-1/2 pt-14 md:py-10">
                 <h2 className="md:text-2xl font-bold text-center">{t('whoarewe.whoarewe')}</h2> <br />
                 <p className="text-justify">
                   {t('whoarewe.whoarewetext1')}
@@ -146,22 +148,22 @@ const HomaPage = () => {
           </div>
 
           {/*Mision & Vision*/}
-          <div className="bg-[#6B6F5B]">
+          <div className="bg-[#F5E9D6]">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60">
 
               <div className="md:w-2/3 pt-10 md:py-10">
-                <h2 className="text-white font-bold md:text-xl">{t('whoarewe.purpose')}</h2>
-                <p className="mt-2 text-[#F5E9D6] leading-relaxed text-justify">
+                <h2 className="text-black font-bold md:text-xl">{t('whoarewe.purpose')}</h2>
+                <p className="mt-2 text-black leading-relaxed text-justify">
                   {t('whoarewe.purposetext')}
                 </p>
               </div>
 
               {/* Barra divisoria */}
-              <div className="hidden md:block h-40 w-[2px] bg-[#F5E9D6]"></div>
+              <div className="hidden md:block h-40 w-[2px] bg-[#633F20]"></div>
 
               <div className="md:w-2/3 pb-10 md:py-10">
-                <h2 className="text-white font-bold md:text-xl">{t('whoarewe.approach')}</h2>
-                <p className="mt-2 text-[#F5E9D6] leading-relaxed text-justify">
+                <h2 className="text-black font-bold md:text-xl">{t('whoarewe.approach')}</h2>
+                <p className="mt-2 text-black leading-relaxed text-justify">
                   {t('whoarewe.approachtext')}
                 </p>
               </div>
@@ -172,13 +174,21 @@ const HomaPage = () => {
 
 
         {/*Gallery */}
-        <div id="gallery" className="snap-section section my-36">
+        <div id="gallery" className="snap-section section">
           <CarruselClientes />
         </div>
 
+        <div className="h-20 flex justify-center items-center bg-[#F5E9D6]">
+          <button
+            className="bg-[#F5E9D6] text-[#633F20] font-bold px-10 py-1 border-2 border-[#633F20] hover:bg-[#C47630] transition duration-300 text-xs md:text-sm lg:text-lg"
+          >
+            {t('reservation.text')}
+          </button>
+        </div>
+
         {/*Legacy*/}
-        <div id="legacy" className="snap-section section text-sm md:text-base">
-          <div className="bg-black text-[#F2F0E4]">
+        <div id="legacy" className="bg-[#6B6F5B] snap-section section text-sm md:text-base">
+          <div className="text-[#F2F0E4]">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60 py-10">
 
               <div className="md:pt-10 md:py-10">
@@ -191,15 +201,15 @@ const HomaPage = () => {
           </div>
 
           {/*Founder*/}
-          <div className="">
-            <div className="py-36 gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:w-1/2 2xl:w-1/2">
+          <div className="bg-[#F5E9D6]">
+            <div className="py-20 gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:w-1/2 2xl:w-1/2">
 
               <div className="md:w-1/4 pt-10 md:py-10 flex items-center justify-center">
                 <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}founder.png`} alt="Logo" />
               </div>
 
               <div className="md:w-3/4 pb-10 md:py-10">
-                <p className="mt-2 text-gray-700 leading-relaxed text-justify">
+                <p className="mt-2 text-black leading-relaxed text-justify">
                   {t('founder.text')}
                 </p>
               </div>
@@ -328,7 +338,7 @@ const HomaPage = () => {
                   </div>
 
                   <button
-                    className="bg-white text-black font-bold px-6 py-1 rounded-full hover:bg-[#BD612E] transition duration-300 text-xs md:text-sm lg:text-lg"
+                    className="bg-[#F5E9D6] text-[#633F20] font-bold px-10 py-1 border-2 border-[#633F20] hover:bg-[#C47630] transition duration-300 text-xs md:text-sm lg:text-lg"
                   >
                     {t('reservation.text')}
                   </button>

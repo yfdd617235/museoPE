@@ -87,58 +87,60 @@ function Gallery() {
   };
 
   return (
-    <div className="py-16 bg-[#F5E9D6]">
-      <div className="text-center mb-10">
-        <h2 className="text-2xl font-bold">{t("gallery.title")}</h2>
-      </div>
+    <div className="py-20 bg-[#F5E9D6]">
+       {/* <div className="text-center py-5">
+          <h2 className="text-2xl font-bold">{t("gallery.title")}</h2>
+        </div> */}
+      <div className="bg-black">
+               <div className="relative flex items-center justify-center">
+          {/* Botón Izquierda */}
+          <button
+            onClick={() => handleScroll("left")}
+            className="absolute left-0 z-10 bg-[#BD612E] bg-opacity-50 p-2 rounded-full hover:bg-[#C47630]"
+          >
+            <ChevronLeftIcon className="h-6 w-6 text-white" />
+          </button>
 
-      <div className="relative flex items-center justify-center">
-        {/* Botón Izquierda */}
-        <button
-          onClick={() => handleScroll("left")}
-          className="absolute left-0 z-10 bg-[#BD612E] bg-opacity-50 p-2 rounded-full hover:bg-[#C47630]"
-        >
-          <ChevronLeftIcon className="h-6 w-6 text-white" />
-        </button>
+          {/* Contenedor Scrollable */}
+          <div
+            ref={containerRef}
+            className="flex gap-6 overflow-x-auto  sm:px-10 py-4 scrollbar-hide scroll-smooth snap-x"
+          >
+            {items.map((item, index) => (
+              <div
+                key={index}
+                className="snap-start w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 h-auto bg-[#C47630] rounded-lg shadow-md text-center relative group hover:shadow-xl transition overflow-hidden flex-shrink-0"
+              >
+                {/* Contenido visible normalmente */}
+                <div className="group-hover:opacity-0 transition-opacity duration-300">
+                  <img
+                    src={item.img}
+                    alt={`Imagen ${index + 1}`}
+                    className="w-full h-40 md:h-44 lg:h-48 object-cover mb-4 rounded-md"
+                  />
+                  <p className="text-white text-sm md:text-base min-h-[60px] ml-2 mr-2">
+                    {item.text}
+                  </p>
+                </div>
 
-        {/* Contenedor Scrollable */}
-        <div
-          ref={containerRef}
-          className="flex gap-6 overflow-x-auto  sm:px-10 py-4 scrollbar-hide scroll-smooth snap-x"
-        >
-          {items.map((item, index) => (
-            <div
-              key={index}
-              className="snap-start w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 h-auto bg-[#C47630] rounded-lg shadow-md text-center relative group hover:shadow-xl transition overflow-hidden flex-shrink-0"
-            >
-              {/* Contenido visible normalmente */}
-              <div className="group-hover:opacity-0 transition-opacity duration-300">
-                <img
-                  src={item.img}
-                  alt={`Imagen ${index + 1}`}
-                  className="w-full h-40 md:h-44 lg:h-48 object-cover mb-4 rounded-md"
-                />
-                <p className="text-white text-sm md:text-base min-h-[60px] ml-2 mr-2">
-                  {item.text}
-                </p>
+                {/* Overlay al hacer hover */}
+                <div className="absolute inset-0 bg-[#C47630] bg-opacity-90 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                  <p className="text-white text-sm md:text-base">{item.tooltip}</p>
+                </div>
               </div>
+            ))}
+          </div>
 
-              {/* Overlay al hacer hover */}
-              <div className="absolute inset-0 bg-[#BD612E] bg-opacity-90 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-                <p className="text-white text-sm md:text-base">{item.tooltip}</p>
-              </div>
-            </div>
-          ))}
+          {/* Botón Derecha */}
+          <button
+            onClick={() => handleScroll("right")}
+            className="absolute right-0 z-10 bg-[#BD612E] bg-opacity-50 p-2 rounded-full hover:bg-[#C47630]"
+          >
+            <ChevronRightIcon className="h-6 w-6 text-white" />
+          </button>
         </div>
-
-        {/* Botón Derecha */}
-        <button
-          onClick={() => handleScroll("right")}
-          className="absolute right-0 z-10 bg-[#BD612E] bg-opacity-50 p-2 rounded-full hover:bg-[#C47630]"
-        >
-          <ChevronRightIcon className="h-6 w-6 text-white" />
-        </button>
       </div>
+
     </div>
   );
 }
