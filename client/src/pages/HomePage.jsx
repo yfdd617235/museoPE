@@ -201,17 +201,17 @@ const HomaPage = () => {
           </div>
 
           {/*Founder*/}
-          <div className="bg-[#C47630]">
-            <div className="py-50 gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:w-1/2 2xl:w-1/2">
+          <div className="bg-[#C47630] py-20">
+            <div className="py-50 gap-5 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:w-1/2 2xl:w-1/2">
 
-              <div className="text-white md:w-3/4 pb-10 md:py-10">
+              <div className="text-white drop-shadow-2xl md:w-3/4">
                 <p className="mt-2 leading-relaxed">
                   {t('founder.text')}
                 </p> <br />
                 <p className="font-bold">Claudia Patricia Escárraga</p>
               </div>
 
-              <div className="md:w-1/4 pt-10 md:py-10 flex items-center justify-center">
+              <div className="md:w-1/4 flex items-center justify-center">
                 <img
                   className="bg-[#F5E9D6] h-32 rounded-full shadow-lg shadow-black/60 object-cover"
                   src={`${import.meta.env.BASE_URL}founder_.png`}
