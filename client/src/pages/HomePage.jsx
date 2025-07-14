@@ -72,7 +72,7 @@ const HomaPage = () => {
         /> */}
 
           {/* Fondo negro con opacidad */}
-          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#633F20] opacity-75 -z-10" />
 
           {/* Logo */}
           <div className="absolute flex flex-col px-6 items-center text-white">
@@ -204,15 +204,19 @@ const HomaPage = () => {
           <div className="bg-[#C47630]">
             <div className="py-50 gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:w-1/2 2xl:w-1/2">
 
-              <div className="md:w-1/4 pt-10 md:py-10 flex items-center justify-center">
-                <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}founder.png`} alt="Logo" />
-              </div>
-
               <div className="text-white md:w-3/4 pb-10 md:py-10">
                 <p className="mt-2 leading-relaxed">
                   {t('founder.text')}
                 </p> <br />
                 <p className="font-bold">Claudia Patricia Escárraga</p>
+              </div>
+
+              <div className="md:w-1/4 pt-10 md:py-10 flex items-center justify-center">
+                <img
+                  className="bg-[#F5E9D6] h-32 rounded-full shadow-lg shadow-black/60 object-cover"
+                  src={`${import.meta.env.BASE_URL}founder_.png`}
+                  alt="founder"
+                />
               </div>
 
             </div>
