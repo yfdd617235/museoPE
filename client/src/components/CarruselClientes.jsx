@@ -7,57 +7,19 @@ function Gallery() {
   const [items, setItems] = useState([]);
   const containerRef = useRef(null);
 
-  useEffect(() => {
-    const updatedItems = [
-      {
-        img: `${import.meta.env.BASE_URL}g1.jpg`,
-        text: t("gallery.cardtext1"),
-        tooltip: t("gallery.tooltip1"),
-      },
-      {
-        img: `${import.meta.env.BASE_URL}g2.jpg`,
-        text: t("gallery.cardtext2"),
-        tooltip: t("gallery.tooltip2"),
-      },
-      {
-        img: `${import.meta.env.BASE_URL}g3.jpg`,
-        text: t("gallery.cardtext3"),
-        tooltip: t("gallery.tooltip3"),
-      },
-      {
-        img: `${import.meta.env.BASE_URL}g4.jpg`,
-        text: t("gallery.cardtext4"),
-        tooltip: t("gallery.tooltip4"),
-      },
-      {
-        img: `${import.meta.env.BASE_URL}g5.jpg`,
-        text: t("gallery.cardtext5"),
-        tooltip: t("gallery.tooltip5"),
-      },
-      {
-        img: `${import.meta.env.BASE_URL}g6.jpg`,
-        text: t("gallery.cardtext6"),
-        tooltip: t("gallery.tooltip6"),
-      },
-      {
-        img: `${import.meta.env.BASE_URL}g7.jpg`,
-        text: t("gallery.cardtext7"),
-        tooltip: t("gallery.tooltip7"),
-      },
-      {
-        img: `${import.meta.env.BASE_URL}g8.jpg`,
-        text: t("gallery.cardtext8"),
-        tooltip: t("gallery.tooltip8"),
-      },
-      {
-        img: `${import.meta.env.BASE_URL}g9.jpg`,
-        text: t("gallery.cardtext9"),
-        tooltip: t("gallery.tooltip9"),
-      },
-    ];
+useEffect(() => {
+  const generatedItems = [];
 
-    setItems(updatedItems);
-  }, [t]);
+  for (let i = 1; i <= 18; i++) {
+    generatedItems.push({
+      img: `${import.meta.env.BASE_URL}photo${i}.jpg`,
+      text: t(`gallery.cardtext${i}`),
+      tooltip: t(`gallery.tooltip${i}`),
+    });
+  }
+
+  setItems(generatedItems);
+}, [t]);
 
   const scrollLeft = () => {
     containerRef.current?.scrollBy({ left: -300, behavior: "smooth" });
