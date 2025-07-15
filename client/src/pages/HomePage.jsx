@@ -42,7 +42,7 @@ const HomaPage = () => {
           <video
             className="absolute top-0 left-0 w-full h-full object-cover -z-20"
             src={`${import.meta.env.BASE_URL}videoMuseo.mp4`}
-            poster={`${import.meta.env.BASE_URL}museope.png`}
+            poster={`${import.meta.env.BASE_URL}photo1.jpg`}
             muted
             autoPlay
             loop
