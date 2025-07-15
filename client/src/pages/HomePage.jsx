@@ -57,21 +57,7 @@ const HomaPage = () => {
             }}
           >Your browser does not support the video tag.</video>
 
-          {/* Poster Image as Fallback */}
-          {/* <img
-          src={`${import.meta.env.BASE_URL}building.png`}
-          alt="Video Poster"
-          className="absolute w-full h-full object-cover bg-blue-800 opacity-30"
-          style={{ display: 'none' }}
-          onLoad={(e) => {
-            const video = document.querySelector('video');
-            if (video && video.style.display === 'none') {
-              e.target.style.display = 'block';
-            }
-          }}
-        /> */}
-
-          {/* Fondo negro con opacidad */}
+           {/* Fondo negro con opacidad */}
           <div className="absolute top-0 left-0 w-full h-full bg-[#633F20] opacity-75 -z-10" />
 
           {/* Logo */}
@@ -92,14 +78,14 @@ const HomaPage = () => {
 
         <div className="h-20 flex justify-center items-center bg-[#F5E9D6]">
           <button
-            className="bg-[#F5E9D6] text-[#633F20] font-bold px-10 py-1 border-2 border-[#633F20] hover:bg-[#C47630] transition duration-300 text-xs md:text-sm lg:text-lg"
+            className="bg-[#F5E9D6] text-[#633F20] font-bold px-10 py-1 border-2 border-[#633F20] hover:bg-[#C47630] transition duration-300 text-sm md:text-base lg:text-lg"
           >
             {t('reservation.text')}
           </button>
         </div>
 
         {/*History*/}
-        <div id="history" className="snap-section section bg-[#6B6F5B] text-[#F5E9D6] text-sm md:text-base">
+        <div id="history" className="snap-section section bg-[#6B6F5B] text-[#F5E9D6] text-base md:text-lg">
           <div className="">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60">
 
@@ -114,22 +100,6 @@ const HomaPage = () => {
                 </p>
               </div>
 
-              {/* <div className="flex-shrink-0 md:w-1/2 flex justify-center items-center">
-                <video
-                  className="w-full h-full object-cover"
-                  src={`${import.meta.env.BASE_URL}presentation.mp4`}
-                  poster={`${import.meta.env.BASE_URL}presentation.png`}
-                  muted
-                  autoPlay
-                  loop
-                  playsInline
-                  onError={(e) => {
-                    console.error("Video failed to load", e); // Manejo de errores
-                    e.target.style.display = 'none';
-                  }}
-                >Your browser does not support the video tag.
-                </video>
-              </div> */}
               <div className="w-full flex-shrink-0 md:w-1/2 flex justify-center items-center">
                 <div className="w-full aspect-video">
                   <iframe
@@ -178,16 +148,8 @@ const HomaPage = () => {
           <CarruselClientes />
         </div>
 
-        {/* <div className="h-20 flex justify-center items-center bg-[#BD612E]">
-          <button
-            className="bg-[#F5E9D6] text-[#633F20] font-bold px-10 py-1 border-2 border-[#633F20] hover:bg-[#C47630] transition duration-300 text-xs md:text-sm lg:text-lg"
-          >
-            {t('reservation.text')}
-          </button>
-        </div> */}
-
         {/*Legacy*/}
-        <div id="legacy" className="bg-[#F5E9D6] snap-section section text-sm md:text-base">
+        <div id="legacy" className="bg-[#F5E9D6] snap-section section text-base md:text-lg">
           <div className="text-black">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60 py-10">
 
@@ -202,7 +164,7 @@ const HomaPage = () => {
 
           {/*Founder*/}
           <div className="bg-[#C47630] py-20">
-            <div className="py-50 gap-5 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:w-1/2 2xl:w-1/2">
+            <div className="py-50 gap-5 flex flex-col md:flex-row justify-center items-center mx-auto px-4 md:w-2/3">
 
               <div className="text-white drop-shadow-2xl md:w-3/4">
                 <p className="mt-2 leading-relaxed">
@@ -214,7 +176,7 @@ const HomaPage = () => {
               <div className="md:w-1/4 flex items-center justify-center">
                 <img
                   className="bg-[#F5E9D6] h-32 rounded-full shadow-lg shadow-black/60 object-cover"
-                  src={`${import.meta.env.BASE_URL}founder_.png`}
+                  src={`${import.meta.env.BASE_URL}founder_.jpg`}
                   alt="founder"
                 />
               </div>
@@ -225,8 +187,8 @@ const HomaPage = () => {
 
 
         {/* Prefooter Section */}
-        <div id="contact" className="snap-section section bg-[#633F20] text-white w-full text-left py-20 bg-repeat bg-center min-h-[200px] flex justify-center">
-          <div className="px-4 md:px-32 lg:px-48">
+        <div id="contact" className="snap-section section bg-[#633F20] text-white w-full text-left py-20 bg-repeat bg-center min-h-[200px] flex justify-center text-base md:text-lg">
+          <div className="px-4 ">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-start justify-center">
               <div className="h-40 lg:h-40 flex p-6">
                 <img
@@ -236,16 +198,16 @@ const HomaPage = () => {
                 />
               </div>
 
-              <div className="flex items-center justify-left p-6">
+              <div className="flex items-center justify-center md:justify-left p-6">
                 <div className="flex flex-col space-y-3 text-left">
-                  <h5 className="text-xs md:text-sm lg:text-lg font-bold">{t('contact.contact')}</h5>
+                  <h5 className="font-bold">{t('contact.contact')}</h5>
 
                   {/* Correo electrónico */}
                   <a
                     href="mailto:museodepablomedellin@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-xs md:text-sm"
+                    className="flex items-center space-x-2"
                   >
                     <EnvelopeIcon className="w-4 h-4 text-[#fffff]" />
                     <span >museodepablomedellin@gmail.com</span>
@@ -257,7 +219,7 @@ const HomaPage = () => {
                       href="https://es.linkedin.com/company/conti"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-xs md:text-sm"
+                      className="flex items-center space-x-2"
                     >
                       <svg
                         role="img"
@@ -275,7 +237,7 @@ const HomaPage = () => {
                       href="https://wa.me/+573104221653"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-xs md:text-sm"
+                      className="flex items-center space-x-2"
                     >
                       <svg
                         role="img"
@@ -294,7 +256,7 @@ const HomaPage = () => {
                       href="https://www.instagram.com/tu_nombre_usuario"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-xs md:text-sm"
+                      className="flex items-center space-x-2"
                     >
                       <svg
                         role="img"
@@ -312,7 +274,7 @@ const HomaPage = () => {
                       href="https://www.facebook.com/tu_nombre_usuario"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-xs md:text-sm"
+                      className="flex items-center space-x-2"
                     >
                       <svg
                         role="img"
@@ -329,7 +291,7 @@ const HomaPage = () => {
                       href="https://twitter.com/tu_nombre_usuario"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-xs md:text-sm"
+                      className="flex items-center space-x-2"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -353,15 +315,15 @@ const HomaPage = () => {
                 </div>
               </div>
 
-              <div className="flex items-center justify-left p-6">
+              <div className="flex items-center justify-center md:justify-left p-6">
                 <div className="flex flex-col space-y-3 text-left">
-                  <h5 className="text-xs md:text-sm lg:text-lg font-bold">{t('contact.location')}</h5>
+                  <h5 className="font-bold">{t('contact.location')}</h5>
                   <div className="flex items-center">
                     <a
                       href="https://www.google.com/maps/place/6%C2%B012'44.2%22N+75%C2%B032'45.2%22W/@6.2122788,-75.5484581,751m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d6.2122788!4d-75.5458832?hl=en&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-xs md:text-sm hover:underline"
+                      className="flex items-center hover:underline"
                     >
                       <svg
                         role="img"
