@@ -41,7 +41,7 @@ const HomaPage = () => {
         <div id="home" className="snap-section relative h-screen w-full flex justify-center items-center overflow-hidden">
           <video
             className="absolute top-0 left-0 w-full h-full object-cover -z-20"
-            src={`${import.meta.env.BASE_URL}museo.mp4`}
+            src={`${import.meta.env.BASE_URL}videoMuseo.mp4`}
             poster={`${import.meta.env.BASE_URL}museope.png`}
             muted
             autoPlay
@@ -58,7 +58,7 @@ const HomaPage = () => {
           >Your browser does not support the video tag.</video>
 
           {/* Fondo negro con opacidad */}
-          <div className="absolute top-0 left-0 w-full h-full bg-[#633F20] opacity-75 -z-10" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#633F20] opacity-30 -z-10" />
 
           {/* Logo */}
           <div className="absolute flex flex-col px-6 items-center text-white">
