@@ -17,8 +17,8 @@ const resources = {
             },
             whoarewe: {
                 whoarewe: "History",
-                whoarewetext1: "Pablo Escobar Gaviria (1949–1993) was a Colombian drug trafficker who led the Medellín Cartel, one of the most powerful and violent criminal organizations of the 20th century. His wealth and influence soared during the 1980s, fueled by cocaine exports to the United States and beyond. Seen by some as a “Robin Hood” for his social work in poor neighborhoods, and condemned by others for his role in a wave of violence that deeply affected Colombia, Escobar remains a controversial figure whose story still invites debate and reflection.",
-                whoarewetext2: "The city of Medellín was both the center of his empire and the stage for its most tragic consequences. From neighborhoods built with his funding to years marked by bombings and clashes with the state, Escobar’s story is deeply woven into the city’s recent past. Today, Medellín seeks to transform that legacy into memory, dialogue, and learning.",
+                whoarewetext1: "Pablo Escobar Gaviria (1949–1993) was a Colombian drug lord who led the Medellín Cartel, one of the most powerful and violent organizations of the 20th century. Admired by some for his social projects and condemned for a legacy of violence, his story remains controversial and reflective.",
+                whoarewetext2: "Medellín was both the heart of his empire and the scene of its darkest chapters. From neighborhoods he funded to a city marked by conflict, today Medellín seeks to turn that past into memory and learning.",
                 purpose: "Our Purpose",
                 purposetext: "This museum aims to explore the life, influence, and contradictions of Pablo Escobar through a critical and reflective lens. We seek to present not only the history, but also the impact that his legacy has had on Colombian society, particularly in Medellín. Our goal is to create a space for memory, understanding, and dialogue.",
                 approach: "Our Perspective",
@@ -95,8 +95,8 @@ const resources = {
             },
             whoarewe: {
                 whoarewe: "Historia",
-                whoarewetext1: "Pablo Escobar Gaviria (1949–1993) fue un narcotraficante colombiano que se convirtió en el líder del Cartel de Medellín, una de las organizaciones criminales más poderosas y violentas del siglo XX. Su fortuna y poder crecieron rápidamente durante los años 80, alimentados por el tráfico de cocaína hacia Estados Unidos y otros países. Aclamado por algunos como un “Robin Hood” por sus obras sociales en barrios populares, y condenado por otros por su papel en una ola de violencia que marcó profundamente a Colombia, Escobar sigue siendo una figura polémica cuya historia continúa generando debate y reflexión.",
-                whoarewetext2: "La ciudad de Medellín fue tanto el centro de su imperio como el escenario de sus consecuencias más trágicas. Desde barrios construidos con su financiación hasta años marcados por atentados y enfrentamientos con el Estado, la historia de Escobar está profundamente entrelazada con el pasado reciente de la ciudad. Hoy, Medellín busca transformar ese legado en memoria, diálogo y aprendizaje.",
+                whoarewetext1: "Pablo Escobar Gaviria (1949–1993) fue un narcotraficante colombiano que lideró el Cartel de Medellín, una de las organizaciones más poderosas y violentas del siglo XX. Admirado por algunos por sus obras sociales y condenado por su legado de violencia, su historia sigue siendo controversial y reflexiva.",
+                whoarewetext2: "Medellín fue el corazón de su imperio y escenario de sus capítulos más oscuros. Desde barrios financiados por él hasta una ciudad marcada por el conflicto, hoy Medellín busca transformar ese pasado en memoria y aprendizaje.",
                 purpose: "Nuestro Propósito",
                 purposetext: "Este museo busca explorar la vida, la influencia y las contradicciones de Pablo Escobar desde una mirada crítica y reflexiva. Queremos presentar no solo los hechos históricos, sino también el impacto que su legado ha tenido en la sociedad colombiana, especialmente en Medellín. Nuestro objetivo es crear un espacio para la memoria, la comprensión y el diálogo.",
                 approach: "Nuestra Perspectiva",

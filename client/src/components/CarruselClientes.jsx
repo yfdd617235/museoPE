@@ -49,7 +49,7 @@ useEffect(() => {
   };
 
   return (
-    <div className="py-10 bg-[#F5E9D6]">
+    <div>
        {/* <div className="text-center py-5">
           <h2 className="text-2xl font-bold">{t("gallery.title")}</h2>
         </div> */}

@@ -41,7 +41,7 @@ function NavBar() {
   }, [isMenuOpen]);
 
   return (
-    <nav className="h-20 fixed top-0 w-full py-0 z-50 shadow-md bg-[#F5E9D6]" >
+    <nav className="h-20 fixed top-0 w-full py-0 z-50 shadow-md bg-[#F5E9D6] text-base md:text-lg" >
 
       <div className="flex justify-between items-center h-full px-5 lg:px-10">
         {/* Logo */}
